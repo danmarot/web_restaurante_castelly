@@ -1,0 +1,689 @@
+/*
+ * Theme Name: Tomatelly Theme
+ * Description: Theme created for Tomatelly
+ * Author: Daniel Maroto
+*/
+
+
+
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Great+Vibes|Montserrat:400,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: 0px;
+}
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #21242e;
+}
+
+h2 {
+    font-family: 'Handlee', cursive;
+}
+
+h3, p {
+    line-height: 1.5em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+
+h2, h3, h4, h5, a {
+    text-transform: capitalize;
+}
+
+
+/* Header */
+
+.container {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 1.5em;
+}
+
+.container-fluid {
+   width: 100%;
+}
+
+.row::after {
+   content: "";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
+header .nav_top{
+   background-color: #21242e;
+   color: white;
+   padding: 20px 0;
+}
+
+header .nav_top ul{
+   display: flex;
+   justify-content: flex-end;
+}
+
+header .nav_top ul li{
+   margin: 0 1rem;
+}
+
+
+header .nav_top ul li a{
+   color: #fafafa;
+   text-decoration: none;
+   font-size: 1.4rem;
+}
+
+header .nav_top a span{
+   display: none;
+}
+
+header .nav_top a i{
+   color: #fafafa;
+}
+
+/* Nav */
+
+
+header nav.container {
+   padding: 1.5em 1.5em;
+}
+
+header h1.logo {
+   float: left;
+   width: 6.25em;
+}
+
+header .hamburguesa {
+   display: block;
+   cursor: pointer;
+   width: 2em;
+   float: right;
+}
+
+header .hamburguesa div {
+   border-top: .2em solid #aaa;
+   width: 2em;
+   margin-bottom: .3em;
+}
+
+header nav .menu {
+   width: 70%;
+   height: auto;
+   width: 100%;
+   overflow: hidden;
+   transition: height .5s;
+}
+
+/* Toggle Responsive */
+
+input.inputOculto {
+   display: none;
+}
+
+input#on:checked~.menu {
+   height: 28em;
+}
+
+input#off:checked~.menu {
+   height: 0em;
+}
+
+header nav .menu li {
+   padding: 1.25em;
+   text-align: center;
+   border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child {
+   border: none;
+   font-size: 4em;
+   padding: 0em;
+   color: #aaa;
+}
+
+header nav .menu li a {
+   display: block;
+   color: #aaa;
+   text-decoration: none;
+   transition: color .25s;
+}
+
+header nav .menu li a.activo, header nav .menu li a:hover {
+   color: #da573a;
+}
+
+/* Hero Image */
+
+.hero {
+   background: #aaa url('static/images/fondo_tom.jpg') no-repeat scroll bottom center;
+   background-size: cover;
+   height: 37.5rem;
+   background-blend-mode: multiply;
+}
+
+.hero>div {
+   color: #fafafa;
+   padding: 15% 3%;
+}
+
+.hero>div>* {
+   margin-bottom: 1em;
+}
+
+.hero h2 {
+   font-size: 2rem;
+   text-align: center;
+}
+
+.hero h3 {
+   color:#fafafa;
+   font-size: 1.25rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+.hero p {
+   font-size: 1.15rem
+}
+
+
+
+.btn {
+   background: #9e0506;
+   display: block;
+   margin: 0 auto;
+   color: #fafafa;
+   text-decoration: none;
+   padding: 1em;
+   width: 170px;
+   transition: all 1s;
+   box-sizing: border-box;
+   border: 1px solid transparent;
+   border-radius: .1em;
+   margin: 0 auto;
+}
+
+.btn:hover {
+   border: 1px solid #9e0506;
+   background-color: #fafafa00;
+}
+
+.btn i {
+   transform: translateX(0);
+   transition: transform .25s;
+}
+
+.btn:hover i {
+   transform: translateX(.5em) scale(1.5);
+}
+
+
+/* Main -- about us -- services */
+
+main {
+   position: relative;
+}
+
+main section {
+   margin-top: 2em;
+}
+
+main section .container {
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+}
+
+main section h2 {
+   color: #21242e;
+   font-size: 2em;
+   text-align: center;
+}
+
+main section div h2,p{
+   padding: 1em;
+}
+
+main section h3{
+   padding-bottom: 1em;
+   font-weight: bold;
+   font-size: 120%;
+}
+
+main .columna div{
+   margin-bottom: 10px;
+}
+
+main section h2>span {
+   color: #9e0506;
+}
+
+.underline {
+   position: relative;
+   font-weight: bold;
+   width: 12.5rem;
+   margin: 0 auto;
+   color: #9e0506;
+   border-style: solid;
+   font-size: 1.5em;
+}
+
+.underline hr {
+   border-color: #9e0506;
+   position: absolute;
+   width: 100%;
+   top: -.5px;
+}
+
+.underline span {
+   display: block;
+   text-align: center;
+}
+
+main section .flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+main .flex article {
+   width: 100%;
+   margin-bottom: 2em;
+   text-align: left;
+   padding: 1.5em 0;
+   border-bottom: 1px solid #aaa;
+}
+
+main .flex article:last-child {
+   border-bottom: none;
+}
+
+main .flex article>* {
+   margin-bottom: 1em;
+}
+
+main section article div>i {
+   color: #da573a;
+   font-size: 2em;
+   border: 2px solid #da573a;
+   padding: 1rem;
+   border-radius: .3rem;
+}
+
+main section article div i.fa-truck {
+   transform: scaleX(-1)
+}
+
+main section article h3 {
+   font-size: 1.25em;
+   font-weight: bold;
+   color: #21242e;
+   padding: 1em;
+}
+
+main section article p {
+   text-align: justify;
+}
+
+main section article .enlace {
+   text-decoration: none;
+   color: #9e0506;
+   font-weight: bold;
+}
+
+main section article .enlace i {
+   transform: translateX(0);
+   transition: transform .25s;
+}
+
+main section article .enlace:hover i {
+   transform: translateX(1em) scale(2);
+}
+
+
+/* contact */ 
+
+
+
+
+
+/* menu */
+
+.pageC{
+   width: auto;
+   background: #21242e;
+}
+
+.menuPage {
+   background: #21242e;
+   color: #fafafa;
+   margin-top: 1em;
+}
+
+.menuPage .menuMenu li {
+   margin-bottom: 1em;
+}
+
+.menuPage .menuMenu a {
+   display: block;
+   padding: 1em;
+   border-radius: .2em;
+   text-decoration: none;
+   color: #fafafa;
+   background-color: transparent;
+   transition: background .5s;
+}
+
+.menuPage .menuMenu a.active {
+   background: #9e0506;
+}
+
+.menuPage .menuMenu a:hover, main.menu .menuMenu a:visited:hover {
+   background: #9e0506;
+}
+
+.menuPage div.container-fluid div.container h2.title-menu{
+   text-align: center;
+   padding: 1em 0 0.5em 0;
+   font-size: 2em;
+
+}
+
+.btn-menu{
+   display: none;
+}
+
+/* Equipo */
+
+.team{
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+}
+
+.team-column {
+   width: 100%;
+}
+
+.texto {
+   margin: 1em 0;
+   padding: 0.5em;
+   line-height: 25px;
+   text-align: justify;
+}
+
+.texto h3{
+   text-align: center;
+}
+
+/* Contacto */
+
+.contacto{
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+}
+
+.contacto-column {
+   width: 100%;
+}
+
+.texto {
+   margin: 1em 0;
+   padding: 0.5em;
+   line-height: 25px;
+   text-align: justify;
+}
+
+.texto h3{
+   text-align: center;
+}
+
+
+
+
+
+/* Reeservas */
+
+main.menuPage div.container-fluid div.container h2.title-reservas{
+   text-align: center;
+   padding: 1em 0 0.5em 0;
+   font-size: 2em;
+
+}
+
+
+/* Meals */
+
+.menuPage .flex {
+   display: flex;
+   width: 90%;
+   margin: 0 auto;
+   flex-flow: row wrap;
+   margin-top: 1.5em;
+}
+
+.menuPage .flex .columna {
+   width: 100%;
+}
+
+.menuPage .flex section article.meal {
+   border: none;
+   margin-bottom: 0;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+
+.menuPage .flex section article.meal>* {
+   margin-bottom: 0;
+}
+
+article.meal .cardImgCont {
+   overflow: hidden;
+}
+
+article.meal h3 {
+   font-size: 1.25rem;
+   color: #fafafa;
+   text-align: left;
+}
+
+article.meal h3 span.price {
+   margin-left: 1em;
+   color: #9e0506;
+}
+
+.flex article.meal:last-child {
+   margin-bottom: 0;
+   border-bottom: none;
+}
+
+/*Botón subir*/
+
+.sticky {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+}
+
+a.subir {
+   position: absolute;
+   right: .5em;
+   bottom: .5em;
+   display: inline-block;
+   color: #fafafa;
+   text-decoration: none;
+   font-size: 2rem;
+   padding: 1em;
+   background: #da573a;
+   border-radius: .2em;
+}
+
+a.subir i {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%)
+}
+
+
+/* footer */
+
+
+footer {
+   padding: 1em;
+   background: #21242e;
+}
+
+footer ul li {
+   float: left;
+   margin-right: 2em;
+}
+
+footer a, footer li {
+   color: #fafafa;
+   text-align: center;
+}
+
+
+
+
+
+
+
+/* Medias Queriess */
+
+
+@media(min-width:769px) {
+   header .nav_top a span {
+       display: inline;
+       font-size: .5em;
+   }
+
+
+   main .flex article:last-child {
+       width: 100%;
+   }
+
+   .menuPage .flex article {
+       width: 100%;
+   }
+
+   .menuPage .flex article {
+       width: 100%;
+   }
+
+}
+
+
+@media(min-width:1005px) {
+
+   header .hamburguesa {
+       display: none;
+       float: none;
+   }
+   input#off:checked~.menu {
+       height: auto;
+   }
+   input#on:checked~.menu {
+       height: auto;
+   }
+   header nav .menu {
+       width: auto;
+       padding-top: 0;
+       height: auto;
+       float: right;
+   }
+   header nav .menu li {
+       display: inline-block;
+       padding: .5em 0em 0 1.25em;
+       text-align: right;
+       border-bottom: none;
+   }
+   header nav .menu li:last-child {
+       display: none;
+   }
+
+   main section .flex .columna {
+       width: 50%;
+       padding: 2em;
+   }
+   .menuPage .flex {
+       flex-direction: row;
+   }
+   .menuPage .flex>.columna:first-child {
+       padding-top: 1.5em;
+       width: 25%;
+   }
+   .menuPage .flex>.columna:last-child {
+       width: 75%;
+       padding-left: 3rem;
+   }
+   .menuPage .flex section article.meal {
+       flex-direction: row;
+       padding: 1.5em 0 1.5em 1.5em;
+   }
+
+   /* Equipo */
+
+   .team{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .team-column {
+      width: 30%;
+   }
+
+   .texto {
+      margin: 1em 0;
+      padding: 1.5em;
+      line-height: 25px;
+   }
+
+   /* Contacto */
+
+   .contacto{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .contacto-column {
+      width: 80%;
+   }
+
+   .texto {
+      margin: 1em 0;
+      padding: 1.5em;
+      line-height: 25px;
+   }
+
+
+
+   
+
+}
+
+

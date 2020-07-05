@@ -1,0 +1,189 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	{% if fn('is_front_page') %}
+	<h2>{{post.title}}</h2>
+	<div class="underline">
+		<hr noshade="noshade">
+	</div>
+	<div class="flex container">
+			<div class="imgCont columna">
+				<div class="marco">
+					<img src="{{post.thumbnail.url}}">
+				</div>
+			</div>
+			<div class="columna texto">
+				{{post.content}}
+			</div>
+	</div>
+	{% endif %}
+
+
+	{% if fn('is_page', 'menu') %}
+	<h2>{{post.title}}</h2>
+	<div class="underline">
+		<hr noshade="noshade">
+	</div>
+	<div class="pageC">
+		<div class="flex container menuPage">
+				<div class="columna">
+					<nav class="menuMenu">
+
+						<ul>
+							<li><a class="btn-menu active" href="#ensaladas">Ensaladas</a></li>
+							<li><a class="btn-menu" href="#verduras">Verduras</a></li>
+							<li><a href="#">Carnes</a></li>
+							<li><a href="#">Pescados</a></li>
+							<li><a href="#">Postres</a></li>
+
+						</ul>
+					</nav>
+						
+
+				</div>
+				<section class="breakfast columna" id="ensaladas">
+					<article class="meal">
+						<div class="cardImgCont"><img src="images/t1.jpg" alt=""></div>
+						<div class="texto">
+							<h3>Chicken burguer with cheese and butter<span class="price"
+									title="cheap cheap!">22 €</span></h3>
+							<p>Vegetable and tea with milk and chocolate</p>
+						</div>
+					</article>
+					<article class="meal row">
+						<div class="cardImgCont"><img src="images/t4.jpg" alt=""></div>
+						<div class="texto">
+							<h3>Coffee and tea with milk and chocolate.<span class="price"
+									title="cheap cheap!">$15 €</span></h3>
+							<span></span>
+							<p>Vegetable and tea with milk and chocolate</p>
+						</div>
+					</article>
+				</section>
+
+				<section class="breakfast columna" id="ensaladas">
+					<article class="meal">
+						<div class="cardImgCont"><img src="images/t1.jpg" alt=""></div>
+						<div class="texto">
+							<h3>Verduras comn tomates<span class="price"
+									title="cheap cheap!">22 €</span></h3>
+							<p>Vegetable and tea with milk and chocolate</p>
+						</div>
+					</article>
+					<article class="meal row">
+						<div class="cardImgCont"><img src="images/t4.jpg" alt=""></div>
+						<div class="texto">
+							<h3>Tomates con <span class="price"
+									title="cheap cheap!">$15 €</span></h3>
+							<span></span>
+							<p>Vegetable and tea with milk and chocolate</p>
+						</div>
+					</article>
+				</section>
+				
+				
+				
+				<div class="imgCont columna">
+					<div class="marco">
+						<img src="{{post.thumbnail.url}}">
+					</div>
+				</div>
+				<div class="columna texto">
+					{{post.content}}
+				</div>
+	</div>
+	{% endif %}
+
+
+
+	{% if fn('is_page', 'equipo') %}
+	<h2>{{post.title}}</h2>
+	<div class="underline">
+		<hr noshade="noshade">
+	</div>
+	<div class=" container team">
+			<div class="team-column">
+				<div class="imgCont">
+					<div class="marco">
+						<img src="{{post.thumbnail.url}}">
+					</div>
+				</div>
+				<div class="texto">
+					{{post.content}}
+				</div>
+			</div>
+
+			<div class="team-column">
+				<div class="imgCont">
+					<div class="marco">
+						<img src="{{post.thumbnail.url}}">
+					</div>
+				</div>
+				<div class="texto">
+					{{post.content}}
+				</div>
+			</div>
+
+			<div class="team-column">
+				<div class="imgCont">
+					<div class="marco">
+						<img src="{{post.thumbnail.url}}">
+					</div>
+				</div>
+				<div class="texto">
+					{{post.content}}
+				</div>
+			</div>
+	</div>
+	{% endif %}
+
+
+
+
+	{% if fn('is_page', 'reservas') %}
+	<h2>{{post.title}}</h2>
+	<div class="underline">
+		<hr noshade="noshade">
+	</div>
+
+
+
+	{% endif %}
+
+
+
+	{% if fn('is_page', 'contacto') %}
+	<h2>{{post.title}}</h2>
+	<div class="underline">
+		<hr noshade="noshade">
+	</div>
+	<div class=" container contacto">
+			<div class="contacto-column">
+				<div class="imgCont">
+					<div class="marco">
+						<img src="{{post.thumbnail.url}}">
+					</div>
+				</div>
+				<div class="texto">
+					{{post.content}}
+				</div>
+			</div>
+
+
+	</div>
+
+
+
+	{% endif %}
+
+
+
+{% endblock %}
+
+{#
+{{post.content}}
+{{post.ID}}
+{{post.title}}
+{{post.post_type}}
+#}

@@ -1,0 +1,32 @@
+# Translation of Plugins - No Gutenberg &#8211; Disable Gutenberg Block Editor - Development (trunk) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - No Gutenberg &#8211; Disable Gutenberg Block Editor - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-01 11:35:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - No Gutenberg &#8211; Disable Gutenberg Block Editor - Development (trunk)\n"
+
+#. Plugin Name of the plugin
+msgid "No Gutenberg - Disable Block Editor - Back to Classic Editor"
+msgstr "No Gutenberg - Disable Block Editor - Back to Classic Editor"
+
+#. Description of the plugin
+msgid "Don't you want the new Gutenberg Block editor bundled with WordPress 5.x for compatibility reasons? Simply get rid of it! Install this plugin prior update to WordPress 5.x, activate and … That's all!"
+msgstr "¿No quieres el nuevo editor de bloques Gutenberg incluido en WordPress 5.x por motivos de compatibilidad? ¡Simplemente deshazte de él! Instala este plugin antes de actualizar a WordPress 5.x, actívalo y … ¡Eso es todo!"
+
+#. Author URI of the plugin
+msgid "https://tellado.es/"
+msgstr "https://tellado.es/"
+
+#. Author of the plugin
+msgid "Fernando Tellado"
+msgstr "Fernando Tellado"
+
+#. Plugin URI of the plugin
+msgid "https://servicios.ayudawp.com/"
+msgstr "https://servicios.ayudawp.com/"

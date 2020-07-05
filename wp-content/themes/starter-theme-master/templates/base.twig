@@ -1,0 +1,85 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">
+	<div class="wrapper">
+		<header class="header" >
+			{% block header %}
+				<div class="nav_top">
+					<ul class="container row">
+						<li>
+							<a class="" href="mailto:info@tomatelly.com">
+								<i class="fas fa-envelope"></i>
+								<span>info@tomatelly.com</span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="tel:+34918920467">
+								<i class="fas fa-phone"></i>
+								<span>+34 91 892 04 67</span>
+							</a>
+						</li>
+                	</ul>
+				</div>
+					<nav class="row container">
+						<h1 class="logo" title="Restaurante Tomatelly">
+							<a href="{{site.url}}">
+								<img src="{{ site.theme.link }}/static/images/logo_t_2.png" alt="{{site.name}}">
+							</a>
+						</h1>
+
+						<input class="inputOculto" type="radio" id="off" name="ocultarMenu" checked>
+						<input class="inputOculto" type="radio" id="on" name="ocultarMenu">
+						<label for="on" class="hamburguesa">
+							<div></div>
+							<div></div>
+							<div></div>
+						</label>
+						
+						{% include "menu.twig" with {'items': menu_cabecera.get_items} %}
+					</nav><!-- #nav -->
+			{% endblock %}
+
+
+			{% if fn('is_front_page') %}
+				<div class="hero container-fluid">
+					<div>
+					<h2>Los mejores platos con los mejores tomates</h2>
+					<h3>Bienvenido a nuestra Restaurante</h3>
+
+					<a href="#" class="btn">Nuestra carta
+						<i class="fas fa-long-arrow-alt-right"></i>
+					</a>
+					</div>
+				</div>
+			{% endif %}
+
+
+		</header>
+
+		<main>
+
+		<section class="container-fluid">
+				{% block content %}
+					Lo sentimos no tenemos más contenido en esta página
+				{% endblock %}
+
+
+		</section>
+
+		</main>
+
+		{% block footer %}
+			<footer id="footer" class="container-fluid">
+				{% include "footer.twig" with {'items': menu_footer.get_items} %}
+			</footer>
+			{{ function('wp_footer') }}
+		{% endblock %}
+		</div>
+	</body>
+</html>

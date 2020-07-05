@@ -1,0 +1,9 @@
+<ul class="container row">
+    <li>Copyright {{"now"|date('Y')}}</li>
+    {% for item in items %}
+		<li class="{{ item.classes | join(' ') }}">
+			<a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+		</li>
+	{% endfor %}
+
+</ul>
