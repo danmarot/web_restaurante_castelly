@@ -144,6 +144,58 @@
 	{% endif %}
 
 
+	{% if fn('is_page', 'aviso') %}
+	<h2>{{post.title}}</h2>
+	<div class="underline">
+		<hr noshade="noshade">
+	</div>
+	<div class=" container contacto">
+			
+			<div class="contacto-column">
+				<div class="imgCont">
+					<div class="marco">
+						<img src="{{post.thumbnail.url}}">
+					</div>
+				</div>
+				<div class="texto">
+					{{post.content}}
+				</div>
+
+
+			</div>
+
+	</div>
+
+	{% endif %}
+
+
+	{% if fn('is_page', 'cookies') %}
+	<h2>{{post.title}}</h2>
+	<div class="underline">
+		<hr noshade="noshade">
+	</div>
+	<div class=" container contacto">
+			
+			<div class="contacto-column">
+				<div class="imgCont">
+					<div class="marco">
+						<img src="{{post.thumbnail.url}}">
+					</div>
+				</div>
+				<div class="texto">
+					{{post.content}}
+				</div>
+
+
+			</div>
+
+	</div>
+
+
+
+	{% endif %}
+
+
 
 {% endblock %}
 
