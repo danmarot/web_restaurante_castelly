@@ -1,9 +1,37 @@
 {% extends "tease.twig" %}
 
 {% block content %}
-	<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
-		<p>{{post.preview.length(25)}}</p>
-		{% if post.thumbnail.src %}
-			<img src="{{post.thumbnail.src}}" />
-		{% endif %}
+
+	{% if fn('is_category', 'equipo') %}
+		<div class="team-column">
+			<div class="imageEquipo">
+				<div class="marco">
+					<img src="{{post.thumbnail.src}}">
+				</div>
+			</div>
+			<h2 class="tituloequipo">{{post.title}}</h2>
+			<div class="texto">
+				{{post.content}}
+			</div>
+		</div>
+	
+	{% endif %}
+
+	{% if fn('is_category', 'menus') %}
+		<div class="team-column">
+			<div class="imageEquipo">
+				<div class="marco">
+					<img src="{{post.thumbnail.src}}">
+					<div class="precio">Precio: {{post.get_field('precio')}}</div>
+				</div>
+			</div>
+			<h2 class="tituloequipo">{{post.title}}</h2>
+			<div class="texto">
+				{{post.content}}
+			</div>
+			<small><strong>Alergenos: {{post.get_field('alergenos')}}</strong></small>
+		</div>
+	
+	{% endif %}
+	
 {% endblock %}

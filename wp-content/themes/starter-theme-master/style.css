@@ -4,52 +4,49 @@
  * Author: Daniel Maroto
 */
 
-
-
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css?family=Handlee|Great+Vibes|Montserrat:400,700&display=swap');
-
-
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 
-
 ::-webkit-scrollbar {
-    display: none;
-    scrollbar-width: 0px;
+   display: none;
+   scrollbar-width: 0px;
 }
 
 html {
-    scrollbar-width: none;
-    scroll-behavior: smooth;
+   scrollbar-width: none;
+   scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #21242e;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   color: #21242e;
+}
+
+strong{
+   font-weight: bold;
 }
 
 h2 {
-    font-family: 'Handlee', cursive;
+   font-family: 'Handlee', cursive;
 }
 
 h3, p {
-    line-height: 1.5em;
+   line-height: 1.5em;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block
+   width: 100%;
+   height: auto;
+   display: block
 }
-
 
 h2, h3, h4, h5, a {
-    text-transform: capitalize;
+   text-transform: capitalize;
 }
-
 
 /* Header */
 
@@ -70,39 +67,36 @@ h2, h3, h4, h5, a {
    clear: both;
 }
 
-
-header .nav_top{
+header .nav_top {
    background-color: #21242e;
    color: white;
    padding: 20px 0;
 }
 
-header .nav_top ul{
+header .nav_top ul {
    display: flex;
    justify-content: flex-end;
 }
 
-header .nav_top ul li{
+header .nav_top ul li {
    margin: 0 1rem;
 }
 
-
-header .nav_top ul li a{
+header .nav_top ul li a {
    color: #fafafa;
    text-decoration: none;
    font-size: 1.4rem;
 }
 
-header .nav_top a span{
+header .nav_top a span {
    display: none;
 }
 
-header .nav_top a i{
+header .nav_top a i {
    color: #fafafa;
 }
 
 /* Nav */
-
 
 header nav.container {
    padding: 1.5em 1.5em;
@@ -196,7 +190,7 @@ header nav .menu li a.activo, header nav .menu li a:hover {
 }
 
 .hero h3 {
-   color:#fafafa;
+   color: #fafafa;
    font-size: 1.25rem;
    font-weight: bold;
    text-align: center;
@@ -205,8 +199,6 @@ header nav .menu li a.activo, header nav .menu li a:hover {
 .hero p {
    font-size: 1.15rem
 }
-
-
 
 .btn {
    background: #9e0506;
@@ -237,7 +229,6 @@ header nav .menu li a.activo, header nav .menu li a:hover {
    transform: translateX(.5em) scale(1.5);
 }
 
-
 /* Main -- about us -- services */
 
 main {
@@ -259,17 +250,34 @@ main section h2 {
    text-align: center;
 }
 
-main section div h2,p{
-   padding: 1em;
+.imageEquipo {
+   border: 3px solid white;
 }
 
-main section h3{
+.imageEquipo .marco{
+   position: relative;
+}
+
+.imageEquipo .marco .precio{
+   position: absolute;
+   color: #fafafa;
+   background-color: #9e0506;
+   padding: 10px;
+   top: 0;
+   right: 0;
+}
+
+.tituloequipo {
+   margin-top: 15px;
+}
+
+main section h3 {
    padding-bottom: 1em;
    font-weight: bold;
    font-size: 120%;
 }
 
-main .columna div{
+main .columna div {
    margin-bottom: 10px;
 }
 
@@ -339,10 +347,6 @@ main section article h3 {
    padding: 1em;
 }
 
-main section article p {
-   text-align: justify;
-}
-
 main section article .enlace {
    text-decoration: none;
    color: #9e0506;
@@ -358,16 +362,11 @@ main section article .enlace:hover i {
    transform: translateX(1em) scale(2);
 }
 
-
-/* contact */ 
-
-
-
-
+/* contact */
 
 /* menu */
 
-.pageC{
+.pageC {
    width: auto;
    background: #21242e;
 }
@@ -400,17 +399,15 @@ main section article .enlace:hover i {
    background: #9e0506;
 }
 
-.menuPage div.container-fluid div.container h2.title-menu{
+.menuPage div.container-fluid div.container h2.title-menu {
    text-align: center;
    padding: 1em 0 0.5em 0;
    font-size: 2em;
-
 }
 
-.btn-menu{
+.btn-menu {
    display: none;
 }
-
 
 .imageCarta {
    background: #aaa url('static/images/t1.jpg') no-repeat scroll bottom center;
@@ -423,7 +420,7 @@ main section article .enlace:hover i {
 
 /* Equipo */
 
-.team{
+.team {
    display: inline-block;
    justify-content: center;
    align-items: center;
@@ -437,25 +434,19 @@ main section article .enlace:hover i {
    margin: 1em 0;
    padding: 0.5em;
    line-height: 25px;
-   text-align: justify;
 }
 
-.texto h3{
+.texto h3 {
    text-align: center;
 }
 
-.imageEquipo {
-   background: #aaa url('static/images/team1.jpg') no-repeat scroll bottom center;
-   background-size: cover;
-   height: 15em;
-   width: 15em;
-   margin: 0 auto;
-   background-blend-mode: multiply;
+.tituloequipo{
+   margin-top: 15px;
 }
 
 /* Contacto */
 
-.contacto{
+.contacto {
    display: inline-block;
    justify-content: center;
    align-items: center;
@@ -467,37 +458,34 @@ main section article .enlace:hover i {
 
 .texto {
    margin: 1em 0;
-   padding: 0.5em;
    line-height: 25px;
-   text-align: justify;
 }
 
-.texto h3{
+.texto h3 {
    text-align: center;
 }
 
-
-.allContact{
+.allContact {
    text-align: center;
 }
 
-form label{
+form label {
    font-weight: bolder;
 }
 
-form input{
+form input {
    border: 2px solid #9e0506;
    border-radius: 4px;
    height: 30px;
 }
 
-form textarea{
+form textarea {
    border: 2px solid #9e0506;
    border-radius: 4px;
    height: 100px;
 }
 
-form p input:last-child{
+form p input:last-child {
    border: 2px solid #9e0506;
    border-radius: 4px;
    height: 30px;
@@ -505,7 +493,7 @@ form p input:last-child{
    color: #9e0506;
 }
 
-.wpcf7-form-control.wpcf7-submit{
+.wpcf7-form-control.wpcf7-submit {
    border: 2px solid #9e0506;
    border-radius: 4px;
    height: 45px;
@@ -519,13 +507,11 @@ form p input:last-child{
 
 /* Reeservas */
 
-main.menuPage div.container-fluid div.container h2.title-reservas{
+main.menuPage div.container-fluid div.container h2.title-reservas {
    text-align: center;
    padding: 1em 0 0.5em 0;
    font-size: 2em;
-
 }
-
 
 /* Meals */
 
@@ -602,9 +588,7 @@ a.subir i {
    transform: translate(-50%, -50%)
 }
 
-
 /* footer */
-
 
 footer {
    padding: 1em;
@@ -621,131 +605,97 @@ footer a, footer li {
    text-align: center;
 }
 
-
-
-
-
-
-
 /* Medias Queriess */
-
 
 @media(min-width:769px) {
    header .nav_top a span {
-       display: inline;
-       font-size: .5em;
+      display: inline;
+      font-size: .5em;
    }
-
-
    main .flex article:last-child {
-       width: 100%;
+      width: 100%;
    }
-
    .menuPage .flex article {
-       width: 100%;
+      width: 100%;
    }
-
    .menuPage .flex article {
-       width: 100%;
+      width: 100%;
    }
-
 }
 
-
 @media(min-width:1005px) {
-
    header .hamburguesa {
-       display: none;
-       float: none;
+      display: none;
+      float: none;
    }
    input#off:checked~.menu {
-       height: auto;
+      height: auto;
    }
    input#on:checked~.menu {
-       height: auto;
+      height: auto;
    }
    header nav .menu {
-       width: auto;
-       padding-top: 0;
-       height: auto;
-       float: right;
+      width: auto;
+      padding-top: 0;
+      height: auto;
+      float: right;
    }
    header nav .menu li {
-       display: inline-block;
-       padding: .5em 0em 0 1.25em;
-       text-align: right;
-       border-bottom: none;
+      display: inline-block;
+      padding: .5em 0em 0 1.25em;
+      text-align: right;
+      border-bottom: none;
    }
    header nav .menu li:last-child {
-       display: none;
+      display: none;
    }
-
    main section .flex .columna {
-       width: 50%;
-       padding: 2em;
+      width: 50%;
+      padding: 2em;
    }
    .menuPage .flex {
-       flex-direction: row;
+      flex-direction: row;
    }
    .menuPage .flex>.columna:first-child {
-       padding-top: 1.5em;
-       width: 25%;
+      padding-top: 1.5em;
+      width: 25%;
    }
    .menuPage .flex>.columna:last-child {
-       width: 75%;
-       padding-left: 3rem;
+      width: 75%;
+      padding-left: 3rem;
    }
    .menuPage .flex section article.meal {
-       flex-direction: row;
-       padding: 1.5em 0 1.5em 1.5em;
+      flex-direction: row;
+      padding: 1.5em 0 1.5em 1.5em;
    }
-
    /* Equipo */
-
-   .team{
+   .team {
       display: flex;
       justify-content: center;
       align-items: center;
    }
-
    .team-column {
-      width: 30%;
+      width: 100%;
    }
-
    .texto {
       margin: 1em 0;
-      padding: 1.5em;
       line-height: 25px;
    }
-
    /* Contacto */
-
-   .contacto{
+   .contacto {
       display: flex;
       justify-content: center;
       align-items: center;
    }
-
    .contacto-column {
       width: 80%;
    }
-
    .texto {
       margin: 1em 0;
-      padding: 1.5em;
       line-height: 25px;
    }
-
-   .allContact{
+   .allContact {
       display: flex;
       justify-content: space-around;
-      text-align: justify;
    }
-
-
-
-   
-
 }
-
-
