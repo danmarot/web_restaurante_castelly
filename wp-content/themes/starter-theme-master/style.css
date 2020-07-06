@@ -411,6 +411,16 @@ main section article .enlace:hover i {
    display: none;
 }
 
+
+.imageCarta {
+   background: #aaa url('static/images/t1.jpg') no-repeat scroll bottom center;
+   background-size: cover;
+   height: 15em;
+   width: 15em;
+   margin: 0 auto;
+   background-blend-mode: multiply;
+}
+
 /* Equipo */
 
 .team{
@@ -432,6 +442,15 @@ main section article .enlace:hover i {
 
 .texto h3{
    text-align: center;
+}
+
+.imageEquipo {
+   background: #aaa url('static/images/team1.jpg') no-repeat scroll bottom center;
+   background-size: cover;
+   height: 15em;
+   width: 15em;
+   margin: 0 auto;
+   background-blend-mode: multiply;
 }
 
 /* Contacto */
